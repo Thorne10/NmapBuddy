@@ -1,0 +1,16 @@
+{
+  "hostnames": [
+    {
+      "name": "localhost",
+      "type": "PTR"
+    }
+  ],
+  "addresses": {
+    "ipv4": "127.0.0.1"
+  },
+  "vendor": {},
+  "status": {
+    "state": "up",
+    "reason": "conn-refused"
+  }
+}
