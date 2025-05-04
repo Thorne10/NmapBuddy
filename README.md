@@ -60,7 +60,7 @@ NmapBuddy accepts multiple targets in a single input session. When prompted, you
 
 The tool will loop through each target and allow individual output format selection per host.
 
-## ⚡ Nmap Scan Execution
+## Nmap Scan Execution
 The core of the project uses the `python-nmap` library to:
 
 - Scan ports in the range 20–100
@@ -68,3 +68,25 @@ The core of the project uses the `python-nmap` library to:
 - Return scan data in a structured format
 
 Scans are performed with a timeout-safe method and basic error handling to skip invalid or unreachable targets.
+
+## Future Implementations
+
+While the current version of nmapBuddy performs basic port and service scanning effectively, several enhancements could further increase its functionality and value:
+
+CSV/JSON Export Options
+Add built-in options to export scan results directly to .csv or .json formats for easier integration with other tools or data analysis platforms.
+
+Web Interface or Dashboard
+Create a lightweight web interface using Flask or Streamlit to allow non-technical users to run scans and view results in a more user-friendly way.
+
+OS Detection and Vulnerability Mapping
+Integrate advanced Nmap flags like -O (OS detection) and tie results into a vulnerability database (e.g., CVEs) for basic risk scoring.
+
+Automated Scheduled Scans
+Implement the ability to schedule recurring scans using cron jobs or Windows Task Scheduler, with optional email notifications upon completion.
+
+Input Validation and Error Handling
+Improve robustness by adding input validation, custom error messages, and recovery options for common issues like network errors or invalid targets.
+
+Multi-Target Scanning
+Extend the tool to support scanning multiple IPs or domains from a list, looping through them automatically and saving results separately.
